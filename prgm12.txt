@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>College Name</title>
+ <style>
+
+   /* CSS for basic styling */
+   body {
+     font-family: Arial, sans-serif;
+   }
+   header {
+     background-color: #333;
+     color: #fff;
+     padding: 20px;
+     text-align: center;
+   }
+   nav {
+     background-color: #444;
+     color: #fff;
+     padding: 10px 0;
+     text-align: center;
+   }
+   nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+   }
+   nav a:hover {
+    background-color: #555;
+   }
+   
+   section {
+    padding: 20px;
+   }
+   footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   }
+ </style>
+</head>
+<body>
+
+<header>
+  <h1>T JOHN COLLEGE</h1>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#programs">Programs</a>
+  <a href="#admissions">Admissions</a>
+  <a href="#faculty">Faculty</a>
+  <!-- Add more navigation links as needed
+</nav>
+
+<section id="about">
+ <h2>About Us</h2>
+ <p>Welcome to our college..</p>
+</section>
+
+<section id="programs">
+  <h2>Programs Offered</h2>
+  <ul>
+   <li>Bachelor's Degree</li>
+   <li>Master's Degree</li>
+  </ul>
+</section>
+
+<section id="admissions">
+  <h2>Admissions</h2>
+  <p>For Admission Enquiry: +91-91 13 26 49 15 | +91-98 45 04 08 04 | adm2@tjohngroup.com | adm3@tjohngroup.com | adm4@tjohngroup.com.</p>
+</section>
+
+<section id="faculty">
+  <h2>Faculty</h2>
+  <ul>
+   <li> Dr. S. Dinakaran</li>
+   <li>Mrs. Pooja V</li>
+   <li>Mrs. B. Sathyabama</li>
+   <li>Ms. Sangeetha</li>
+   <li>Mr. Ashok raj</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2022 T.John Group of Institutions - All rights reserved</p>
+</footer>
+
+</body>
+</html>

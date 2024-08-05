@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body style="background-color:powderblue;">
+
+<h1>Welcome to My Simple HTML Page</h1>
+
+<p>This is a paragraph with a <a href="https://www.edx.org">hyperlink</a> to Example.com.</p>
+
+<marquee behavior="scroll" direction="left">This is a scrolling text using the marquee tag.</marquee>
+
+<p>Here is an image:</p>
+<img src="edx.jpg" alt="Placeholder Image">
+
+</body>
+</html>

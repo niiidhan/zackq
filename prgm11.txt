@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Arithmetic Operations</title>
+<body>
+  <script>
+  var n1, n2, result;
+n1=prompt("Enter first number");
+n1=parseInt(n1);
+n2=prompt("Enter second number");
+n2=parseInt(n2);
+result=n1+n2;
+
+document.write("Addition = "+ result + "<br>");
+result-n1-n2;
+
+document.write("Subraction = "+ result + "<br>");
+result=n1*n2;
+
+document.write("Multiplication = "+ result + "<br>");
+result=n1/n2;
+
+document.write("Division = "+ result);
+</script>
+</body>
+</html>

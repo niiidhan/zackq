@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+   <title>Form Validation Example</title> 
+   <style> 
+    .error { 
+     color: red; 
+    } 
+ </style> 
+</head> 
+<body> 
+  <h2>Registration Form</h2> 
+  <form id="registrationForm" onsubmit="return validateForm()"> 
+    <label for="username">Username:</label> 
+    <input type="text" id="username" name="username"><br><br> 
+    <label for="email">Email:</label> 
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label> 
+    <input type="password" id="password" name="password"><br><br> 
+    <label for="confirmPassword">Confirm Password:</label> 
+    <input type="password" id="confirmPassword" name="confirmPassword"><br><br> 
+    <input type="submit" value="Register"> 
+    <div id="errorMessages" class="error"></div> 
+</form>
+
+<script> 
+  function validateForm() { 
+   //Get the form values 
+   var username = document.getElementById("username").value; 
+   var email = document.getElementById("email").value; 
+   var password = document.getElementById("password").value; 
+   var confirmPassword = document.getElementById("confirmPassword").value; 
+   var errorMessages = ""; 
+     var msg = "";
+
+   // Validate username 
+   if (username == "") { 
+     errorMessages += "Username is required.<br>"; 
+   } 
+   // Validate email 
+   if (email == "") { 
+    errorMessages += "Email is required.<br>"; 
+   } else if (!validateEmail(email)) { 
+     errorMessages += "Email format is invalid.<br>"; 
+   }
+ 
+   // Validate password 
+   if (password == "") { 
+    errorMessages += "Password is required.<br>"; 
+   } 
+  // Validate confirm password 
+  if (confirmPassword == "") { 
+   errorMessages += "Confirm Password is required.<br>";
+  } else if (password != confirmPassword) { 
+    errorMessages += "Passwords do not match.<br>"; 
+  } 
+  // Display error messages if any 
+  if (errorMessages != "") { 
+   document.getElementById("errorMessages").innerHTML = errorMessages; 
+   return false; // Prevent form submission
+
+
+  } 
+   alert("Submitted!"); 
+}
+
+function validateEmail(email) { 
+  var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+  return re.test(email); 
+} 
+  </script> 
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
