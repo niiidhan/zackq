@@ -1,0 +1,43 @@
+Alert conform Prompt
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2><center> JavaScript Alert, Confirm, Prompt </center></h2>
+
+<button onclick="funAlert()">Alert</button>
+<button onclick="funConfirm()">Confirm</button>
+<button onclick="funPrompt()">Prompt</button>
+
+<p id="demo"></p>
+
+<script>
+function funAlert() {
+    alert("I am an alert box!");
+}
+
+function funConfirm() {
+    var text;
+    if (confirm("Press a button!")) {
+        text = "You pressed OK!";
+    } else {
+        text = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+function funPrompt() {
+    var text;
+    var person = prompt("Please enter your name:", "");
+    if (person == null || person == "") {
+        text = "You cancelled the prompt.";
+    } else {
+        text = "Hello " + person + "! How are you? What can I do for you?";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

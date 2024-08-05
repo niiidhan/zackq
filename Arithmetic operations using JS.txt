@@ -1,0 +1,49 @@
+Arithmetic operations using JS
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function add() {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            result = num1 + num2;
+            alert("The result is: " + result);
+        }
+
+        function sub() {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            result = num1 - num2;
+            alert("The result is: " + result);
+        }
+
+        function multiply() {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            result = num1 * num2;
+            alert("The result is: " + result);
+        }
+
+        function divide() {
+            num1 = Number(document.getElementById("firstnumber").value);
+            num2 = Number(document.getElementById("secondnumber").value);
+            if (num2 == 0) {
+                alert("The 2nd number should not be zero!");
+            } else {
+                result = num1 / num2;
+                alert("The result is: " + result);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Arithmetic Operations</h2>
+    1st number: <input type="text" id="firstnumber"><br>
+    2nd number: <input type="text" id="secondnumber"><br><br>
+    <input type="button" onclick="add()" value="Add"><br>
+    <input type="button" onclick="sub()" value="Subtract"><br>
+    <input type="button" onclick="multiply()" value="Multiply"><br>
+    <input type="button" onclick="divide()" value="Divide"><br>
+</body>
+</html>
